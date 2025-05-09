@@ -21,10 +21,8 @@
 ## 角度
 每个摄像机的四个角落各有一个可移动的点，表现为选中摄像机时显示的绿色圆环和圆点。这些点控制绿色四边形摄像机的顶点。  
 
-<figure markdown="span">  
-    ![摄像机四边形顶点](img//camera-angles.png)  
-    <figcaption>摄像机四边形顶点，每个偏移量不同。</figcaption>  
-</figure>  
+![摄像机四边形顶点](img//camera-angles.png)  
+摄像机四边形顶点，每个偏移量不同。
 
 每个圆点是摄像机四边形对应顶点的位置，外围圆环表示该顶点可偏离原点的最大距离。若要将顶点移出边界，可按住<kbd>Shift</kbd>操作。也可启用**Unlock camera angles**设置来反转此行为。  
 
@@ -32,10 +30,7 @@
 
 下图展示了摄像机角度及其视觉效果：  
 
-<figure markdown="span">  
-    ![摄像机角度参考图](img//oameras-mayhemm.png)  
-    <figcaption>图片来源：[Mayhemmm](https://github.com/mayhemmmwith3ms)</figcaption>  
-</figure>  
+![摄像机角度参考图](img//oameras-mayhemm.png)  图片来源：[Mayhemmm](https://github.com/mayhemmmwith3ms) 
 
 ## 渲染顺序
 摄像机按创建顺序从先到后渲染，启用偏好设置窗口中的**Show camera numbers**选项可查看顺序，编号会以白色数字显示在摄像机中心。  

@@ -3,10 +3,9 @@
 Tiles编辑器用于用材质与图块装饰房间。编辑图块和材质是房间编辑流程的关键环节，通常在地形编辑器中完成初步布局后进行，且常与地形编辑协同工作。掌握图块和材质设计基本原则对打造优质视觉效果至关重要（本文档不涉及图块和材质设计的通用原则)。
 
 ## 材质
-<figure markdown="span">
-    ![包含多个材质单元格的房间局部](img/materials.png)
-    <figcaption>包含多个材质的区域</figcaption>
-</figure>
+
+![包含多个材质单元格的房间局部](img/materials.png)
+包含多个材质的区域
 
 Materials（材质）本质上用于为房间几何结构添加纹理。之所以说"本质上"，是因为不同材质处理几何细节的方式各异：有些是简单平铺的大尺寸纹理，有些会在边缘和角落添加特定图形，还有些（如Trash家族和Small Pipes）采用程序化生成的细节。
 
@@ -35,22 +34,18 @@ Tiles（图块）是预制美术资源，包含金属梁、管道、石块、机
 ### 放置
 在图块选择器（下图）中选择目标图块后，房间视图中会出现称为"tile cursor"的图块预览。左键放置，右键移除。按住<kbd>Shift</kbd>+鼠标键可操作矩形区域。
 
-<figure markdown="span">
-    ![瓦片选择器](img//tile-selector.png)
-    <figcaption>瓦片选择器</figcaption>
-</figure>
+![瓦片选择器](img//tile-selector.png)
+瓦片选择器
 
 !!! info
 
-    通过顶部"Work Layer"输入框或<kbd>Tab</kbd>键可切换工作图层。
+通过顶部"Work Layer"输入框或<kbd>Tab</kbd>键可切换工作图层。
 
 ### 地形要求
 
 每个图块指定其占位的几何模式（称为"specs"）。在Rained中，这些规范显示为图块光标后的绿色轮廓：第一层为亮绿色，第二层（若需要）为深绿色。
 
-<figure markdown="span">
-    !["Very Large Beam"的瓦片光标预览](img//tile-cursor-white.png)
-</figure>
+!["Very Large Beam"的瓦片光标预览](img//tile-cursor-white.png)
 
 除两种特殊情况外，每个单元格的要求直观可见：
 - **Unspecified**：无轮廓，允许任意地形类型
@@ -66,10 +61,9 @@ Tiles（图块）是预制美术资源，包含金属梁、管道、石块、机
 ### Heads 和 Bodies
 图块实际由1x1网格的"原子"组成：一个tile head（必选）和若干tile bodies（可选）。tile head是图块中心参考点，通过**View > Tile Heads**可高亮显示。
 
-<figure markdown="span">
-    ![标记X的tile head](img/tilehead.png)
-    <figcaption>标记X处为瓦片的tile head</figcaption>
-</figure>
+
+![标记X的tile head](img/tilehead.png)
+标记X处为瓦片的tile head
 
 可强制放置图块覆盖部分tile bodies（但不可覆盖tile head）。缺失tile bodies不影响整体渲染，但会导致该处地形结构与图块图形重叠显示。
 
@@ -78,15 +72,13 @@ Rained默认显示的图块图像并非游戏内实际渲染效果，而是简�
 
 需注意预览效果在几何渲染方面不准确。实际渲染时，被tile head/bodies占据的单元格不会渲染地形结构。例如"Ventilation Box Empty"图块：
 
-<figure markdown="span">
-    ![Rained中的Ventilation Box Empty](img//ventbox-empty-preview.png)
-    <figcaption>Rained中的显示效果</figcaption>
-</figure>
 
-<figure markdown="span">
-    ![游戏内的Ventilation Box Empty](img//ventbox-empty-render.png)
-    <figcaption>游戏实际渲染效果（注意实体几何未渲染）</figcaption>
-</figure>
+![Rained中的Ventilation Box Empty](img//ventbox-empty-preview.png)
+Rained中的显示效果
+
+
+![游戏内的Ventilation Box Empty](img//ventbox-empty-render.png)
+游戏实际渲染效果（注意实体几何未渲染）
 
 ## 自动图块
 部分图块用于构建结构（如栅栏、SU图案、管道等）。Autotiles（自动图块）系统可加速此类结构的创建流程。
@@ -108,10 +100,8 @@ Rained默认显示的图块图像并非游戏内实际渲染效果，而是简�
 ### 自定义自动图块
 点击**Create Autotile**按钮可创建无需编程的路径自动图块。命名并选择分类后，会出现配置界面：
 
-<figure markdown="span">
-    ![自定义路径自动瓦片配置界面](img/custom-path-autotile.png)
-    <figcaption>自定义路径自动瓦片配置</figcaption>
-</figure>
+![自定义路径自动瓦片配置界面](img/custom-path-autotile.png)
+自定义路径自动瓦片配置
 
 在此界面可指定1x1尺寸的图块元素，启用连接点/端帽功能并设置对应图块。
 

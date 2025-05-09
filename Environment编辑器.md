@@ -1,5 +1,5 @@
 # Environment编辑器
-此编辑模式用于修改房间的杂项属性，本质上是官方编辑器"level overview"界面控件的移植版本。  
+**Environment编辑器**用于修改房间的杂项属性，本质上是官方编辑器"level overview"界面控件的移植版本。  
 
 编辑器专属窗口包含以下选项：  
 
