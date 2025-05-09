@@ -1,9 +1,7 @@
 # Geometry编辑器
 **Geometry编辑器**用于编辑房间的地形结构和一些可交互对象。右侧停靠的窗口标题为"Build"，包含可用于编辑几何结构和放置对象的工具，以及一些用于图层遮罩和镜像选项的复选框。
 
-<figure markdown="span">
-    ![The Build window](img//build-window.png)
-</figure>
+![The Build window](img//build-window.png)
 
 ## 视图模式
 View mode（视图模式）控制每个图层在关卡视口中的组合方式。
@@ -54,15 +52,11 @@ Slope工具的矩形选择行为特殊，用于创建用户指定尺寸的斜坡
 ### 捷径
 Shortcuts（又称"pipes"）用于房间间或房间内传送。以下是四个捷径示例，第一个是同一房间内两点间的双向连接。
 
-<figure markdown="span">
-    ![Shortcut 1](img//shortcuts/shortcut1.png)
-</figure>
+![Shortcut 1](img//shortcuts/shortcut1.png)
 
 下图包含三个捷径。最上方将生物传送到不同房间，中间是生物巢穴，最下方是Whack-A-Mole洞，将生物传送至同一房间内随机另一个Whack-A-Mole洞。
 
-<figure markdown="span">
-    ![Shortcut 2](img//shortcuts/shortcut2.png)
-</figure>
+![Shortcut 2](img//shortcuts/shortcut2.png)
 
 捷径入口需满足特定条件才能被视为有效。首先，入口周围3x3区域必须为固体块（入口块除外，应为空气或半砖块——半砖块用于朝下的入口）。例如，要在墙上创建入口，需在墙中放置一个空气块，并将孔洞中的下一个固体块替换为入口。其次，必须在入口方向放置shortcut dot。若入口左侧有空气块，则需在入口右侧开始放置dot路径。
 
